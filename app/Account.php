@@ -12,7 +12,7 @@ class Account extends Model
        	'user_id',
         'first_name',
         'last_name',
-        'email',
+        'bio',
         'phone',
         'status',
 	];
