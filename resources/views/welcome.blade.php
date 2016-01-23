@@ -33,15 +33,15 @@
 
 </script>
         <style>
-                        body {
-                    background-color: #fff;
-                    margin: 0;
-                    padding: 0;
-                    width: 98%;
-                    display: table;
-                    font-weight: 100;
-                    font-family: 'Cambay', sans-serif;
-                }
+            body {
+                background-color: #fff;
+                margin: 0;
+                padding: 0;
+                width: 98%;
+                display: table;
+                font-weight: 100;
+                font-family: 'Cambay', sans-serif;
+            }
         </style>
     </head>
     <body>
@@ -50,6 +50,7 @@
             <div class="content">
                 <img src="http://ubernie.tavaresoft.com/images/ubernie.png">
                 <h1>Ridesharing to Caucuses Iowa Coming Soon</h1>
+                    @include('auth.register')
             </div>
         </div>
     </body>

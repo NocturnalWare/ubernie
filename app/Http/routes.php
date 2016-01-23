@@ -24,8 +24,8 @@ Route::post('auth/login', array('as' => 'auth.login', 'uses' => 'Auth\AuthContro
 
 
 // Registration routes...
-Route::get('auth/register', 'Auth\AuthController@getRegister');
-Route::post('auth/register', 'Auth\AuthController@postRegister');
+Route::get('auth/register', array('as' => 'auth.register', 'uses' => 'Auth\AuthController@getRegister'));
+Route::post('auth/register', array('as' => 'auth.register', 'uses' => 'Auth\AuthController@postRegister'));
 
 Route::group(['middleware' => 'auth'], function () {
 
