@@ -23,6 +23,8 @@ Route::get('auth/login', array('as' => 'auth.login', 'uses' => 'Auth\AuthControl
 Route::post('auth/login', array('as' => 'auth.login', 'uses' => 'Auth\AuthController@postLogin'));
 
 
+Route::resource('accounts', 'AccountsController');
+
 // Registration routes...
 Route::get('auth/register', array('as' => 'auth.register', 'uses' => 'Auth\AuthController@getRegister'));
 Route::post('auth/register', array('as' => 'auth.register', 'uses' => 'Auth\AuthController@postRegister'));
