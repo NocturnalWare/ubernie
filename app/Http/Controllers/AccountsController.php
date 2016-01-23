@@ -39,7 +39,8 @@ class AccountsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Account::create(['email' => $request->input('email'), 'bio' => $request->input('message')]);
+        return redirect()->back();
     }
 
     /**
